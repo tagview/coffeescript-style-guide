@@ -192,21 +192,6 @@ var obj =
   age: 23
 ```
 
-Put each key-value pair on its own line.
-
-```coffeescript
-# Bad
-var obj =
-  name: "Sasha", age: 23,
-  rating: 10
-
-# Good
-var obj = 
-  name: "Sasha"
-  age: 23
-  rating: 10
-```
-
 Don't use commas when creating multiline objects.
 
 ```coffeescript
@@ -221,6 +206,20 @@ var obj =
   name: "Sasha"
   age: 23
   rating: 10
+```
+
+When possible, don't use the braces.
+
+```coffeescript
+triangle = new Triangle base: 10, height: 30
+
+$.ajax
+  url: "/posts"
+  data: $("#form").serialize()
+  success: ->
+    alert "Post successfully created"
+  error: ->
+    alert "Error creating the post"
 ```
 
 ## Functions
