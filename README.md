@@ -286,7 +286,7 @@ Avoid the use of a standalone `@`.
 ```coffeescript
 # Bad
 class UsersView extends Backbone.View
-  initiliaze: -
+  initiliaze: ->
     @collection.on "reset", @render, @
 
   render: ->
@@ -295,7 +295,7 @@ class UsersView extends Backbone.View
 
 # Good
 class UsersView extends Backbone.View
-  initiliaze: -
+  initiliaze: ->
     @collection.on "reset", @render, this
 
   render: ->
