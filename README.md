@@ -102,6 +102,12 @@ class User extends Human
 good = new User "Yeah"
 ```
 
+Use uppercase with underscores for constants.
+
+```coffeescript
+HI_I_AM_A_CONSTANT = 42
+```
+
 Prefix jQuery/zeptojs objects with a `$`.
 
 ```coffeescript
@@ -117,12 +123,6 @@ Prefix booleans with `is` or `has`.
 ```coffeescript
 user.isActive
 user.hasPosts()
-```
-
-Use uppercase with underscores for constants.
-
-```coffeescript
-HI_I_AM_A_CONSTANT = 42
 ```
 
 ## Strings
