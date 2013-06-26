@@ -91,13 +91,13 @@ Use [PascalCase](http://c2.com/cgi/wiki?PascalCase) for classes.
 ```coffeescript
 # Bad
 class user extends human
-  constructor: (@name)
+  constructor: (@name) ->
 
 bad = new user "Noooooo"
 
 # Good
 class User extends Human
-  constructor: (@name)
+  constructor: (@name) ->
 
 good = new User "Yeah"
 ```
