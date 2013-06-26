@@ -48,10 +48,10 @@ Put a space after an assignment.
 
 ```coffeescript
 # Bad
-hello = (name="Joe") alert "Hello #{name}"
+hello = (name="Joe") -> alert "Hello #{name}"
 
 # Good
-hello = (name = "Joe") alert "Hello #{name}"
+hello = (name = "Joe") -> alert "Hello #{name}"
 ```
 
 Don't put spaces before `:`.
@@ -300,6 +300,26 @@ class UsersView extends Backbone.View
   render: ->
     $("body").html("Hi")
     this
+```
+
+Try to avoid to use the fat arrow `=>` when declaring methods, as it can impact performance in some cases.
+
+```coffeescript
+# Bad
+class UserView extends Backbone.View
+  initialize: ->
+    @collection.on "reset", @render
+
+  render: =>
+    ...
+
+# Good
+class UserView extends Backbone.View
+  initialize: ->
+    @collection.on "reset", @render, this
+
+  render: ->
+    ...
 ```
 
 ## Conditionals
