@@ -211,15 +211,13 @@ var obj =
 When possible, don't use the braces.
 
 ```coffeescript
-triangle = new Triangle base: 10, height: 30
+# Bad
+triangle = new Triangle({ base: 10, height: 30})
+triangle = new Triangle { base: 10, height: 30}
 
-$.ajax
-  url: "/posts"
-  data: $("#form").serialize()
-  success: ->
-    alert "Post successfully created"
-  error: ->
-    alert "Error creating the post"
+# Good
+triangle = new Triangle(base: 10, height: 30)
+triangle = new Triangle base: 10, height: 30
 ```
 
 ## Functions
