@@ -24,10 +24,10 @@ Don't put spaces between parentheses.
 
 ```coffeescript
 # Bad
-triangle = -> ( base, height ) base * height / 2
+triangle = ( base, height ) -> base * height / 2
 
 # Good
-triangle = -> (base, height) base * height / 2
+triangle = (base, height) -> base * height / 2
 ```
 
 Put a space after a comma and operator signs.
