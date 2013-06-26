@@ -44,7 +44,7 @@ numbers = [1, 2, 3]
 sum = 1 + 2
 ```
 
-Put a space after an asignment.
+Put a space after an assignment.
 
 ```coffeescript
 # Bad
