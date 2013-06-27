@@ -137,7 +137,7 @@ name = 'Vegeta'
 name = "Vegeta"
 ```
 
-Use interpolation instead of contatenation.
+Use interpolation instead of concatenation.
 
 ```coffeescript
 # Bad
